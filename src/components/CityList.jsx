@@ -5,7 +5,7 @@ import Spinner from './Spinner';
 
 const CityList = ({ cityData, isLoading }) => {
   // console.log(cityData);
-  console.log(isLoading);
+  // console.log(isLoading);
 
   if (isLoading) return <Spinner />;
 
@@ -15,7 +15,7 @@ const CityList = ({ cityData, isLoading }) => {
     );
   return (
     <div>
-      <ul className={styles.CityList}>
+      <ul className={styles.cityList}>
         {cityData.map((city) => (
           <CityItem city={city} key={city.id} />
         ))}

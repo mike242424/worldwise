@@ -2,13 +2,12 @@
 .cityItem:link,
 .cityItem:visited {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   align-items: center;
-  margin: 10px 0;
 
   background-color: var(--color-dark--2);
   border-radius: 7px;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border-left: 5px solid var(--color-brand--2);
   cursor: pointer;
 

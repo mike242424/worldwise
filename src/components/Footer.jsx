@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p className={styles.copyright}>
-        &copy Cpoyright {new Date().getFullYear()} by WorldWise Inc.
+        &copy; Cpoyright {new Date().getFullYear()} by WorldWise Inc.
       </p>
     </footer>
   );

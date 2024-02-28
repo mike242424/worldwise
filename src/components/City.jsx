@@ -1,6 +1,10 @@
+import { useParams } from 'react-router-dom';
+import ButtonBack from './ButtonBack';
 import styles from './City.module.css';
 
 function City() {
+  const { id } = useParams();
+  // console.log(x);
   // TEMP DATA
   const currentCity = {
     cityName: 'Lisbon',
@@ -10,6 +14,14 @@ function City() {
   };
 
   const { cityName, emoji, date, notes } = currentCity;
+
+  const formatDate = (date) =>
+    new Intl.DateTimeFormat('en', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      weekday: 'long',
+    }).format(new Date(date));
 
   return (
     <div className={styles.city}>

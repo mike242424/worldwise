@@ -4,7 +4,6 @@ import styles from './City.module.css';
 
 function City() {
   const { id } = useParams();
-  // console.log(x);
   // TEMP DATA
   const currentCity = {
     cityName: 'Lisbon',

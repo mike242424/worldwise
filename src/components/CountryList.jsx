@@ -1,12 +1,11 @@
-import CityItem from './CityItem';
 import styles from './CountryList.module.css';
 import CountryItem from './CountryItem';
 import Message from './Message';
 import Spinner from './Spinner';
+import { useCities } from '../contexts/CitiesContext';
 
-const CountryList = ({ cityData, isLoading }) => {
-  // console.log(cityData);
-  // console.log(isLoading);
+const CountryList = () => {
+  const { cityData, isLoading } = useCities();
 
   if (isLoading) return <Spinner />;
 

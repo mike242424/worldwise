@@ -1,4 +1,4 @@
-import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import styles from './City.module.css';
 import { useCities } from '../contexts/CitiesContext';
 import { useEffect } from 'react';
@@ -13,14 +13,6 @@ function City() {
   useEffect(() => {
     getCity(id);
   }, [id]);
-
-  // TEMP DATA
-  // const currentCity = {
-  //   cityName: 'Lisbon',
-  //   emoji: '🇵🇹',
-  //   date: '2027-10-31T15:59:59.138Z',
-  //   notes: 'My favorite city so far!',
-  // };
 
   const formatDate = (date) =>
     new Intl.DateTimeFormat('en', {

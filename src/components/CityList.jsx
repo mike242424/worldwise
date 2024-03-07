@@ -5,9 +5,9 @@ import Message from './Message';
 import Spinner from './Spinner';
 
 const CityList = () => {
-  const { cityData, isLoading } = useCities();
+  const { cityData, isCitiesLoading } = useCities();
 
-  if (isLoading) return <Spinner />;
+  if (isCitiesLoading) return <Spinner />;
 
   if (!cityData.length)
     return (

@@ -8,9 +8,6 @@ import Button from './Button';
 function City() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const lat = searchParams.get('lat');
-  const lng = searchParams.get('lng');
   const { getCity, currentCity, isCityLoading } = useCities();
 
   useEffect(() => {
